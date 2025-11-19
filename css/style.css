@@ -26,7 +26,7 @@ body {
     /* MODIFICATION : Réduction hauteur (padding) et logos aux coins (padding G/D) */
     padding: 15px 15px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     /* Règle essentielle pour que le menu soit cliquable et au-dessus de tout */
     z-index: 99999; 
