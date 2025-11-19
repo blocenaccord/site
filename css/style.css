@@ -51,12 +51,17 @@ body {
     width: auto;
 }
 
-/* style.css */
+/* style.css - Autour de la ligne 54 */
 .nav {
     display: flex;
     gap: 30px;
-    /* CORRECTION: Centre verticalement tous les éléments du menu */
-    align-items: center; 
+    align-items: center;
+    
+    /* --- NOUVELLES LIGNES POUR CENTRER --- */
+    position: absolute;       /* Sort le menu du flux normal */
+    left: 50%;               /* Le pousse à la moitié de l'écran */
+    transform: translateX(-50%); /* Le recule de sa propre moitié pour être parfaitement centré */
+    height: 100%;            /* S'assure qu'il reste bien aligné verticalement dans le header */
 }
 
 .nav a, .nav .nav-item {
